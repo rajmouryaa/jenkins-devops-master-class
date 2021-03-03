@@ -1,5 +1,5 @@
 pipeline{
-	agent { label 'docker alpine' }
+	agent { docker {image 'alpine' } }
 //	environment {
 //		dockerHome = tool 'mydocker'
 //		PATH = "$dockerHome/bin:$PATH"
