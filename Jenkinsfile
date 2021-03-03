@@ -1,9 +1,16 @@
-node {
-	stage('Build') {
-		echo "Build"
-	}
-	stage('Test') {
-		echo "Test"
+pipeline{
+	agent any
+	stages{
+		stage('Build'){
+			steps{
+				echo 'This is build stage'
+			}
+		}
+		stage('Test'){
+			steps{
+				echo 'This is test stage'
+			}
+		}
 	}
 	post{
 		success{
