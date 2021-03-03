@@ -1,9 +1,10 @@
 pipeline{
 	agent any
-	envirnoment {
+	environment {
 		dockerHome = tool 'mydocker'
 		PATH = "$dockerHome/bin:$PATH"
 	}
+	
 	stages{
 		stage('Build'){
 			steps{
