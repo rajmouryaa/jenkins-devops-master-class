@@ -3,6 +3,7 @@ pipeline{
 	envirnoment {
 		dockerHome = tool 'mydocker'
 		PATH = "$dockerHome/bin:$PATH"
+	}
 	stages{
 		stage('Build'){
 			steps{
