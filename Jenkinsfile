@@ -1,15 +1,9 @@
 pipeline{
-	agent { docker {image 'alpine' } }
-//	environment {
-//		dockerHome = tool 'mydocker'
-//		PATH = "$dockerHome/bin:$PATH"
-//	}
-////
+	agent any
 	stages{
 		stage('Build'){
 			steps{
 				echo 'This is build stage'
-				sh 'docker --version'
 			}
 		}
 		stage('Test'){
