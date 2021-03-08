@@ -23,7 +23,7 @@ pipeline{
 			echo 'I run when pipeline is a success'
 		}
 		failure{
-			echo 'I run when pipeline is a failure'
+			echo 'I run when pipeline is a failure!!'
 		}
 	}
 }
