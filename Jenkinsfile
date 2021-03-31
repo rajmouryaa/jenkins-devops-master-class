@@ -1,7 +1,3 @@
-//Testing webhook//
-//test1
-//test3
-//test4
 pipeline{
 	agent any
 	stages{
